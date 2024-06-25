@@ -33,6 +33,7 @@ global_params = {
 FLUID = 0
 AIR = 1
 SOLID = 2
+BINGHAM = 3
 
 @ti.kernel
 def abs_vector(f1: ti.template(), f2: ti.template(), fout: ti.template()):
