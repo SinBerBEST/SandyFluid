@@ -7,7 +7,8 @@ OUTPUT = False
 
 if __name__ == "__main__":
 
-    ti.init(arch=ti.cuda)
+    ti.init(arch=ti.gpu)
+    #ti.init(arch=ti.cpu)
 
     n_frame = int(sys.argv[1]) if len(sys.argv) >= 2 else None
     reconstruct_step = int(sys.argv[2]) if len(sys.argv) >= 3 else 1
